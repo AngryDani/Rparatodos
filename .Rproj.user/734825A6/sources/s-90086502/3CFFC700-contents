@@ -35,3 +35,27 @@ any(notas>=11) # TRUE-> no todos jalaron, existen aprobados
 all(notas>=11) # FALSE-> no todas las notas son mayores que 11, entonces, existe jalados
 
 
+# NA and NULL
+
+# NA es algo que no existe 
+# NULL es algo vacío
+
+# Los valores NA no permiten hacer ciertos cálculos estadísticos como la media: mean()
+notas_na<- c(notas, NA) # agrego al vector notas 1 NA
+mean(notas_na ): NA # al existir un valor NA me arroja el resultado también como NA, entonces:
+mean(notas_na, na.rm = "True") # para eliminar los NA y permita hacer los cálculos 
+
+# se puede operar cuando existe NULL y no lo cuenta como un objeto mas:
+notas_null<- c(notas, NULL, NULL) #AGREGAMOS 2 NULL Y LA MEDIA NO VARÍA
+mean(notas) # media: 13.5
+mean(notas_null) # media: 13.5
+
+# FILTROS SUBSET()
+
+
+
+
+
+
+
+
