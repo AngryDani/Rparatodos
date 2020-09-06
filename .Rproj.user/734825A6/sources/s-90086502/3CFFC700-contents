@@ -50,7 +50,13 @@ notas_null<- c(notas, NULL, NULL) #AGREGAMOS 2 NULL Y LA MEDIA NO VARÍA
 mean(notas) # media: 13.5
 mean(notas_null) # media: 13.5
 
-# FILTROS SUBSET()
+# FILTROS and SUBSET()
+# Filtros:
+notas_aprobadas<- notas[notas>=11] # asignamos a una variable las notas aprobadas según la condición especificada
+notas_aprobadas # [1] 11 14 20
+
+# SUBSET(): Sirve como un filtro pero elimina automáticamente los NA
+subset(notas_na, notas_na>=11) # :: [1] 11 14 20
 
 
 
