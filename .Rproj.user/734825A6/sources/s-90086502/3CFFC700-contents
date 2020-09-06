@@ -1,0 +1,37 @@
+# asignado valores
+# la C es de concatenar 
+valores <- c(1,2,3,4,5)
+
+# método assign
+
+assign("notas", c(11,14,09,20))
+
+# extracción de valores, al igual que python se usa []
+
+valores[1] 
+
+# extraccion de valores con condiciones:
+
+notas[notas>=11]
+
+# sucesiones: seq() <> range() - Python, a diferencia de python la última cifra es inclusiva 
+
+seq(1,10) # python: list(range(1,5))
+
+# repeticiones rep():
+
+rep(1, 10) # lo que se va a repetir, cuántas veces se va a repetir
+rep(notas, 2) #tambien puede repetir vectores
+rep(seq(5), 3) # tambien se puede repetir secuencias
+
+# FUNCIONES ALL() and ANY()
+
+# ANY() Responde si existe AL MENOS UN NÚMERO QUE CUMPLA CON una condición (es cierta o no), según el vector:
+
+any(notas>=11) # TRUE-> no todos jalaron, existen aprobados
+
+# ALL() Responde si TODOS LOS NÚMEROS CUMPLEN CON LA CONDICIÓN PLANTEADA
+
+all(notas>=11) # FALSE-> no todas las notas son mayores que 11, entonces, existe jalados
+
+
