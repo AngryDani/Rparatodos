@@ -66,6 +66,8 @@ which(notas>=11) # Arroja los índices del vector que cumplen la condición
 
 # FUNCIÓN ILELSE()
 
+ifelse(notas>=11, "aprobado", "jalado") # :: [1] "aprobado" "aprobado" "jalado"   "aprobado"
+
 ifelse(any(notas>=11), "Hay aprobados", "Todos están jalados") # :: [1] "Hay aprobados"
 
 
