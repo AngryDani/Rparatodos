@@ -59,7 +59,14 @@ notas_aprobadas # [1] 11 14 20
 subset(notas_na, notas_na>=11) # :: [1] 11 14 20
 
 
+# Función de selección WHICH() 
 
+which(notas>=11) # Arroja los índices del vector que cumplen la condición
+# :: [1] 1 2 4 --> índices
+
+# FUNCIÓN ILELSE()
+
+ifelse(any(notas>=11), "Hay aprobados", "Todos están jalados") # :: [1] "Hay aprobados"
 
 
 
