@@ -71,6 +71,33 @@ ifelse(notas>=11, "aprobado", "jalado") # :: [1] "aprobado" "aprobado" "jalado" 
 ifelse(any(notas>=11), "Hay aprobados", "Todos están jalados") # :: [1] "Hay aprobados"
 
 
+# FUNCIONES ÚTILES:: 
+
+# MIN(VECTOR), MAX(VECTOR), sqrt(), unique()
+
+# SORT(VECTOR) ORDENAR VECTORES DE MENOR A MAYOR:: decreasing= TRUE de Mayor a Menor
+
+sort(notas, decreasing = TRUE)
+
+# OTROS TIPOS DE VECTORES::
+
+# Asignar valores de un vector a otro vector::
+
+frutas <- c("manzana", "plátano", "uva")
+precios <- c(1,1.5, 3)
+# names() :: 
+names(precios) <- frutas
+precios
+
+#  Clase de objetos:
+# R es un lenguaje de programación orientada a Objetos::
+# - Vectores
+# - Matrices (arrays)
+# - Factores
+# - Listas
+# - Data Frames (hoja de datos)
+# - Funciones
+
 
 
 
