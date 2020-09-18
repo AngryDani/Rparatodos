@@ -33,5 +33,29 @@ names(gamers_dataframe)
 mean(gamers_dataframe$victorias)
 
 
+# SUBCONJUNTOS DE UN DATAFRAME, SUBSET()::
+# el dataframe que poseo
+gamers_dataframe
+# subset()
+calificados= subset(gamers_dataframe, victorias>=5)
+
+calificados
+
+# RBIND(), MERGE()
+# Para combinar dataframes
+
+# rbind(), los dataframes a combinar deben de tener las mismas variables
+
+otros_gamers= data.frame(gamers=c("Papita", "Vann", "Snorlak", "Flipin"), 
+                         victorias= c(2, 1, 5, 12), fechas= c(2019, 2018, 2018, 2017))
+otros_gamers
+# combino los dataframes en un nuevo dataframes
+
+players = rbind(gamers_dataframe, otros_gamers)
+players
+
+
+
+
 
 
