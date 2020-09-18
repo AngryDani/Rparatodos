@@ -70,6 +70,8 @@ asesinos$nombres
 # (2da forma) con dobles corchetes Nombre_lista[["atributo"]]
 asesinos[["nombres"]]
 
+# DATAFRAMES::
+
 
 
 
