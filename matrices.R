@@ -62,6 +62,14 @@ premios_usuarios
 table(premios_usuarios)
 
 
+# LISTAS
+# crear una lista 
+asesinos<- list(nombres= c("Damers", "Payasito", "El Sapito"), muertes= c(500, 900, 120))
+# ingresar a los atributos de la lista medainte el signo dólar $ (1era forma)
+asesinos$nombres
+# (2da forma) con dobles corchetes Nombre_lista[["atributo"]]
+asesinos[["nombres"]]
+
 
 
 
