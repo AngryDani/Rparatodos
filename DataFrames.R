@@ -54,7 +54,10 @@ otros_gamers
 players = rbind(gamers_dataframe, otros_gamers)
 players
 
+# Merge() muestra los datos repetidos, para evitar ello debemos poner el parámetro all= TRUE
 
+merge(gamers_dataframe, otros_gamers, all= TRUE) #sino se coloca el parámetro all, no mostraría ningún 
+# dato dado que no existe observaciones repetidas.
 
 
 
